@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(1, 1, 80) !important;
+} 
+.full-box{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    text-align: center;
+    color:gold;
+    font-family: 'Reggae One', cursive;
+}
+.title{
+    font-size: 65px;
+}
+.level{
+    font-size: 40px  !important;
+}
+.game{
+    width:480px;
+    height:475px;
+    /* width:31%;
+    height:475px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* background-color: whitesmoke; */
+}
+.box{
+    width:200px;
+    height: 200px;
+    /* width: 42%;
+    height: 42% ; */
+    border: 6px solid black;
+    border-radius: 40px;
+}
+.red {
+    background-color: rgb(250, 39, 24);
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: rgb(23, 102, 248);
+  }
+  
+  .yellow {
+    background-color: rgb(247, 215, 34);
+  }
+
+.remove{
+    display: none !important;
+}
+.pressed {
+    box-shadow: 0 0 50px 4px white;
+    background-color: grey !important;
+}
+
+.wrong{
+    background-color: red !important;
+}
+
+@media only screen and (max-width: 450px) {
+    .box{
+        width: 175px;
+        height: 175px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .level{
+        font-size: 30px !important;
+    }
+    .game{
+        height:438px
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="full-box d-flex">
+        <div class="mt-5 mb-3 head">
+            <h1 class="title mb-4" >Simon Game</h1>
+            <h3 id ="level" class="level"></h3>
+        </div>
+        
+        <div class="game d-flex">
+            <div id="green" class="box m-3 green" onclick="start('green')"></div>
+            <div id="red" class="box m-3 red" onclick="start('red')"></div>
+            <div id="blue" class="box m-3 blue" onclick="start('blue')"></div>
+            <div id="yellow" class="box m-3 yellow" onclick="start('yellow')"></div>
+        </div>
+        <button class="btn mt-3 btn-light" onclick=genRandomColor()>Start</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
