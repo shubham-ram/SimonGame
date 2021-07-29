@@ -50,6 +50,8 @@ function checkResult(id){
         console.log("wrong"); 
 
         $(".btn").removeClass("remove").html("Retry");
+        colorSequence=[];
+        userColorSequence=[];
     }
 }
 
